@@ -1,0 +1,14 @@
+var smallerNumbersThanCurrent = function(nums) {
+    let arrr=[]
+    
+    for(let i =0;i< nums.length;i++){
+        let c=0
+        for (let j=nums.length-1;j>=0; j--){
+            if(j!=i&&nums[j]<nums[i]){
+                c++
+            }
+            
+        }arrr.push(c)
+    }
+    return arrr
+};
