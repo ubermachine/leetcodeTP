@@ -1,0 +1,9 @@
+var findNumbers = function(nums) {
+    let e=0
+    nums.forEach(a=>{
+     if(String(a).length%2==0){
+            e++
+        }
+    })
+    return e
+};
