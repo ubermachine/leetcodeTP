@@ -1,0 +1,6 @@
+var subtractProductAndSum = function(n) {
+    let d=String(n).split("")
+    d=d.map(a=>a=parseInt(a))
+    return d.reduce((a,b)=>a*b)-d.reduce((a,b)=>a+b)
+};
+subtractProductAndSum( 4421)
