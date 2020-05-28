@@ -1,0 +1,11 @@
+var numJewelsInStones = function(J, S) {
+    J=J.split("")
+    let c= 0
+    J.forEach(a=>{
+        let r=new RegExp(a,'g')
+        if(S.match(r)){
+            c+=S.match(r).length
+}
+    })
+    return(c)
+};
