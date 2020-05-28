@@ -1,0 +1,8 @@
+var createTargetArray = function(nums
+, index) {   
+    let arr=[]
+        for(let j=0;j<index.length;j++){
+            arr.splice(index[j],0,nums[j])
+    }
+    return arr
+};
