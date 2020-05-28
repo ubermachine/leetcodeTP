@@ -1,0 +1,17 @@
+
+var balancedStringSplit = function(s
+) {let c=0
+let d=0
+    for(let i of s){
+        if(i=="R"){
+            c++
+        }else{
+            c--      
+        }
+        if(c==0){
+            d++
+        }
+    }
+   return d
+    
+}
