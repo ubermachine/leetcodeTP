@@ -1,0 +1,17 @@
+var arrr=[]
+var pusher=function(freq,val){
+    while(freq>0){
+        arrr.push(val)
+        freq--
+    }
+}
+var decompressRLElist = function(nums) {
+    
+    for(let i=0;i<nums.length;i+=2){
+      pusher(nums[i],nums[i+1])
+    }
+ let f=arrr
+ arrr=[] //leetcode stores prev array on secomd test?
+    return f
+};
+decompressRLElist([1,1,2,3])
