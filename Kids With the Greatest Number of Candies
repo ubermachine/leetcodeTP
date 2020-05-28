@@ -1,0 +1,8 @@
+var kidsWithCandies = function(candies, extraCandies) {
+
+  
+
+    return (candies.map(a=>
+        a+extraCandies>=Math.max(...candies)))
+};
+kidsWithCandies (candies = [12,1,12], extraCandies = 10)
