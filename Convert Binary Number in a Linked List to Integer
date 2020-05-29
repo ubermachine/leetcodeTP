@@ -11,15 +11,10 @@
  */
 var getDecimalValue = function(head) {
     let curr= head
-    console.log(head)
-    let cc=[]
+    let cc=""
     while(curr!=null){
-         cc.push(curr.val)
-       
+         cc+=curr.val
         curr=curr.next
-    
-        
     }
- 
-    return parseInt(cc.join(""),2)
+    return parseInt(cc,2)
 };
