@@ -1,0 +1,16 @@
+/**
+ * @param {string[][]} paths
+ * @return {string}
+ */
+var destCity = function(paths) {
+    let g=[]
+    let k=paths.join().split(",")
+    paths.forEach(a=>g.push(a[0]))
+    for(let i of k){
+        if(!g.includes(i)){
+            return i
+        }
+    }
+    
+   
+};
