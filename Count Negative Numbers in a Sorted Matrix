@@ -1,0 +1,7 @@
+var countNegatives = function(grid) {
+    let str=grid.toString().match(/-[\d]{1,3}/g)
+    if(str){
+    return str.length}else{
+        return 0
+    }
+};
