@@ -1,0 +1,23 @@
+/**
+ * @param {string[]} words
+ * @return {number}
+ */
+var uniqueMorseRepresentations = function(words) {
+    let myMap=new Map()
+    let str=[]
+    let arr=[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+    let c=97
+    for(let i of arr){
+        myMap.set(String.fromCharCode(c++),i)
+    }
+    for(let i of words){
+        let stt=''
+        for(let j of i){
+            let f=myMap.get(j)
+           
+            stt+=f
+        } if(!str.includes(stt)){str.push(stt)}
+    }
+   
+    return str.length
+};
