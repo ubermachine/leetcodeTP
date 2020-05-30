@@ -1,0 +1,15 @@
+/**
+ * @param {number} n
+ * @return {number[]}
+ */
+var sumZero = function(n) {
+    let i=0, arr=[],sum=0, ne=n-1;
+    while(ne){
+        sum+=i
+        arr.push(i++)
+        ne--
+    }
+    
+    arr.push(-sum)
+    return arr
+};
