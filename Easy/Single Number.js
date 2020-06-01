@@ -20,6 +20,6 @@ var singleNumber = function(nums) {
     let hash = new Map()
     for(let val of nums){
         hash.has(val)? hash.delete(val):hash.set(val);
-    }
+    } 
     return hash.keys().next().value
 };
