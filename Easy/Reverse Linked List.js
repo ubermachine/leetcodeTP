@@ -13,5 +13,5 @@ var reverseList = function(head) {
         current.next=prev
         prev=current
     }
-    return prev
+    return current
 }
