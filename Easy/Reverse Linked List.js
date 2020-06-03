@@ -1,13 +1,7 @@
 var reverseList = function(head) {
-    
-    let prev = null,curr=null,next=head;
-    while(next){
-        curr=next
-        next=curr.next
-        curr.next=prev
-        prev=curr
+    let [prev, current] = [null, head]
+    while(current) {
+        [current.next, prev, current] = [prev, current, current.next]
     }
-   
-    return curr
-    
+    return prev
 }
